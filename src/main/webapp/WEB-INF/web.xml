@@ -1,0 +1,93 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>myServlets.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/hi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>testRedirect</servlet-name>
+        <servlet-class>myServlets.testRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testRedirect</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>testForward</servlet-name>
+        <servlet-class>myServlets.testForward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testForward</servlet-name>
+        <url-pattern>/forward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PutOnCart</servlet-name>
+        <servlet-class>myServlets.PutOnCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PutOnCart</servlet-name>
+        <url-pattern>/PutOnCart</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>FirstJsp</servlet-name>
+        <jsp-file>/firstjsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstJsp</servlet-name>
+        <url-pattern>/date</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class> myServlets.SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/setCookies</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class> myServlets.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/getCookies</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CleanCookiesServlet</servlet-name>
+        <servlet-class> myServlets.CleanCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CleanCookiesServlet</servlet-name>
+        <url-pattern>/cleanCookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <servlet-class> myServlets.EmployeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <url-pattern>/employee</url-pattern>
+    </servlet-mapping>
+
+</web-app>
